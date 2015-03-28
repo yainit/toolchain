@@ -1,0 +1,29 @@
+#!./busybox-k8p5 ash
+#
+#EXTENTS="x86Os x86 x86mmxOs x86mmx k6p3 k7p4 k8p5 k9c2 atom coreix k10 "
+ #/bin/busybox tar -cvk --owner=root --format=pax  busybox-k5 busybox-x86mmx busybox-k6 busybox-k6p3 busybox-k7 busybox-k7p4 busybox-k8 busybox-k8p5 busybox-k9 busybox-k9c2 busybox-atom busybox-k10 busybox-coreix busybox-debug > bb.tar 
+T=`tar --version 2>/dev/null`
+RC=$?
+ if [ $RC -eq 0 ] ; then 
+   echo "$T"
+   tar -cvki --format=posix -b20 --file=rt.tar  bin/*
+   RC=$? 
+ else
+   T=`./busybox-k8p5 tar --help`
+   if [ $RC -eq 0 ] ; then 
+     echo "$T"
+     ./busybox-k8p5 tar -cvk bin/*  > rt.tar 
+     RC=$?
+   fi
+ fi
+ [ $RC -ne 0 ] && exit $RC
+ T=`xz --version 2>/dev/null`
+ RC=$?
+ if [ $RC -eq 0 ] ; then 
+   echo "$T"
+   xz -zvfk9 rt.tar
+   RC=$?
+ fi
+exit $RC
+#
+

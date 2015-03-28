@@ -1,0 +1,16 @@
+--- a/util-linux/volume_id/volume_id_internal.h.original	2013-09-23 18:40:34.000000000 +0000
++++ b/util-linux/volume_id/volume_id_internal.h	2013-09-23 18:45:27.000000000 +0000
+@@ -92,9 +92,11 @@
+ /* util.h */
+ 
+ /* size of superblock buffer, reiserfs block is at 64k */
+-#define SB_BUFFER_SIZE				0x11000
++/* HD drives >= 1 TB need for some reason doubled buffer sizes  */
++#define SB_BUFFER_SIZE				0x21000
+ /* size of seek buffer, FAT cluster is 32k max */
+-#define SEEK_BUFFER_SIZE			0x10000
++/* to appear with BLKID applet */
++#define SEEK_BUFFER_SIZE			0x20000
+ 
+ #if BB_LITTLE_ENDIAN
+ # define le16_to_cpu(x) (uint16_t)(x)
