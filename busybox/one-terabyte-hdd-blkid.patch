@@ -9,7 +9,7 @@
 +#define SB_BUFFER_SIZE				0x21000
  /* size of seek buffer, FAT cluster is 32k max */
 -#define SEEK_BUFFER_SIZE			0x10000
-+/* to appear with BLKID applet */
++/* to appear with BLKID applet for all filesystems */
 +#define SEEK_BUFFER_SIZE			0x20000
  
  #if BB_LITTLE_ENDIAN
