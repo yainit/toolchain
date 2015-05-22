@@ -1,13 +1,14 @@
-          TOOLCHAIN
-=======================================
+                   Withdrawn
+###################################################
+Sorry, they did it!
+During the electoral campaign in Spain, my bank account was 
+touched by the generally propagated weirdness and money was
+withdrawn by Spanish authorities 
+without preceding announcement or any justification. 
 
-This repository contains all files and patches
-used to generate the producing toolchain for all
-binaries that are used in the YaIniT Project.
+For your comprehension that free software is not to publish
+under the circumstances of attacks against the European social
+conventions, many thanks!   
 
-
-The YaIniT toolchain needs his well defined components
-giving the guarantee for a well functioning with the
-distributions in the same time slot. 
-
-
+2015-05-22
+Dieter Miosga    
