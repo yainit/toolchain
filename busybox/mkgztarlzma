@@ -1,0 +1,10 @@
+#!/bin/bash
+#
+#EXTENTS="x86Os x86 x86mmxOs x86mmx k6p3 k7p4 k8p5 k9c2 atom coreix k10 "
+  tar -ck  busybox-k5.gz busybox-x86mmx.gz busybox-k6.gz busybox-k6p3.gz busybox-k7.gz busybox-k7p4.gz busybox-k8.gz busybox-k8p5.gz busybox-k9.gz busybox-k9c2.gz busybox-atom.gz busybox-k10.gz busybox-coreix.gz busybox-debug.gz > bb.tar  
+  [ $? -ne 0 ] && exit $?
+  lzma -9fve   bb.tar 
+  [ $? -ne 0 ] && exit $?
+exit 0
+#  --lzma=dict=1024k,lc=8,lp=2,mode=best,fb=273
+

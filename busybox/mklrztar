@@ -1,0 +1,8 @@
+#!/bin/bash
+#
+#EXTENTS="x86Os x86 x86mmxOs x86mmx k6p3 k7p4 k8p5 k9c2 atom coreix k10 "
+  lrztar -kvvf  -p4 -T -N0 -w9 -L8 ./bb  
+  [ $? -ne 0 ] && exit $?
+exit 0
+#
+

@@ -1,0 +1,10 @@
+#!/bin/bash
+#
+#EXTENTS="x86Os x86 x86mmxOs x86mmx k6p3 k7p4 k8p5 k9c2 atom coreix k10 "
+  tar -cvk -b4 --owner=root --format=pax busybox-k5 busybox-x86mmx busybox-k6 busybox-k6p3 busybox-k7 busybox-k7p4 busybox-k8 busybox-k8p5 busybox-k9 busybox-k9c2 busybox-atom busybox-k10 busybox-k14 busybox-k16 busybox-coreavx busybox-corex busybox-k15 > bb.tar  
+  [ $? -ne 0 ] && exit $?
+  lzma -8fvk   bb.tar 
+  [ $? -ne 0 ] && exit $?
+exit 0
+#  --lzma=dict=1024k,lc=8,lp=2,mode=best,fb=273
+

@@ -1,10 +1,8 @@
-                   Withdrawn
+                   TOOLCHAIN
 ###################################################
 
-For your comprehension that free software is not to publish
-under the circumstances of 
-Denial Of Service and Denial of Information Attacks
-against the European social conventions, many thanks!   
+Indication of all used production binaries
 
-2015-05-22
+
+2016-01-02
 Dieter Miosga    
