@@ -1,8 +1,7 @@
                    TOOLCHAIN
 ###################################################
 
-Indication of all used production binaries
+CONTENTS DELETED THE DAY AFTER THE U.S.A. ANNOUNCED
+TO HAVE WITHDRAWN THEIR MEMEBERSHIP FROM THE HUMAN RIGHTS COUNCIL
+OF THE UNITED NATIONS
 
-
-2016-01-02
-Dieter Miosga    
